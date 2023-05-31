@@ -1,0 +1,114 @@
+<div class="container-fluid table-container fade-in-left">
+  <div class="rechex mt-4 mb-4">
+    <div class="container-fluid" id="recherche">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-sm">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Chercher par
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Titre</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Auteur</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Id</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Chercher</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <table
+    class="table table-hover table-secondary table-striped-columns"
+    style="text-align: center"
+  >
+    <thead class="table-dark rounded-5">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Auteur</th>
+        <th scope="col">Editeur</th>
+        <th scope="col">Année</th>
+        <th scope="col">Nbr exemplaires</th>
+        <th scope="col">Nbr pages</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td>2020</td>
+        <td>150</td>
+        <td>103</td>
+        <td>
+          <button class="btn btn-outline-primary" onclick="change('modifier')">
+            Modifier
+          </button>
+          <button class="btn btn-outline-danger">Supprimer</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>2005</td>
+        <td>100</td>
+        <td>340</td>
+
+        <td>
+          <button class="btn btn-outline-primary" onclick="change('modifier')">
+            Modifier</button
+          ><button class="btn btn-outline-danger">Supprimer</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry the Bird</td>
+        <td>john</td>
+        <td>@twitter</td>
+        <td>2022</td>
+        <td>150</td>
+        <td>355</td>
+        <td>
+          <button class="btn btn-outline-primary" onclick="change('modifier')">
+            Modifier</button
+          ><button class="btn btn-outline-danger">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</div>

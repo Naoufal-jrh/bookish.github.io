@@ -1,0 +1,78 @@
+<div class="fade-in-left">
+  <div class="container-fluid table-container">
+    <div class="rechex mt-4 mb-4">
+      <div class="container-fluid" id="recherche">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-sm">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chercher par
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Titre</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Auteur</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Id</a>
+                </li>
+              </ul>
+            </div>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">
+                Chercher
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <form>
+      <fieldset class="container-sm m-sm-2">
+        <legend>Ajouter/Modifier un Document</legend>
+        <div class="col-md-6 col-sm-8">
+          <label for="Titre" class="form-label">Titre</label>
+          <input type="text" class="form-control" id="Titre" />
+        </div>
+        <div class="col-md-6 col-sm-8">
+          <label for="inputEmail4" class="form-label">Auteur</label>
+          <input type="text" class="form-control" id="Auteur" />
+        </div>
+        <div class="col-md-6 col-sm-8">
+          <label for="Editeur" class="form-label">Editeur</label>
+          <input type="text" class="form-control" id="Editeur" />
+        </div>
+
+        <div class="col-md-6 col-sm-8">
+          <label for="Année" class="form-label">Année</label>
+          <input type="number" class="form-control" id="Année" />
+        </div>
+        <div class="col-md-6 col-sm-8">
+          <label for="Prix" class="form-label">Nombre exemplaires</label>
+          <input type="number" class="form-control" id="Prix" />
+        </div>
+        <div class="col-md-6 col-sm-8">
+          <label for="nbrpages" class="form-label">Nombre pages</label>
+          <input type="email" class="form-control" id="nbrpages" />
+        </div>
+        <div class="container-sm buttons mt-3">
+          <button type="button" class="btn btn-primary">Ajouter</button>
+          <button type="button" class="btn btn-secondary">Modifier</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
